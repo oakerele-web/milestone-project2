@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Number Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+
+<div id="container">
+    <h1>Random Number Guess Game!</h1>
+
+    <div id="welcome" class="panel">
+        <h2>You are welcome to play an exciting number guess game!<br> It's both challenging and relaxing at the sametime.</h2>
+    </div>
+
+        <div class="jumbotron">
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#intModal">How to play the game!</button>
+
+        <div class="modal fade" id="intModal" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Instructions</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>The game RANDOMLY picks a numberbetween 0 and 99 that is known only to the Console.<br>
+                        The player then has a chance of making 10 guesses to unveil the mystery number.
+                        Each time a guess is made, a message comes up to announce one of the following:<br>
+                        a) That's lower! Guess: _ Remaining: _ (so player will know he/she must guess higher figure to get the mystery number)<br>
+                        b) That's higher! Guess: _ Remaining: _ (similar to above, it to guide the player on what to guess next)<br>
+                        c) No more guesses remaining! The number was _<br>
+                        d) Yes, its _! It took you _ guesses<br>
+                        e) Refresh to play it again.<br>
+                        Now you can start playing the game and I assure you that you will find it interesting. Enjoy!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel">
+   
+        <p class="output">I am thinking of a number between 0 and 99.</p>
+        <input class="input" type="text" placeholder="Enter your guess..." autofocus>
+        <button id="button">Guess</button><br><hr>
+        <button onclick="newGame()">NEW GAME</button>
+    </div>
+</div>
+
+<script type="text/javascript" src="asset/js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

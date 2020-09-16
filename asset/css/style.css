@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,600,700|Cuprum:100,200,300,400,500,600,700');
+
+body {
+    background: 1.2em;
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    background-size: cover; 
+}
+
+#container {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgb(130, 103, 155);
+    opacity: 0.98;
+}
+
+.panel {
+    background: #eee;
+    padding: 10px;
+    max-width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+
+.input {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+}
+
+.output {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: "Ubuntu", sans-serif;
+     background: #eee;
+    padding: 10px;
+    max-width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+button {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    cursor: pointer;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    
+    background: -webkit-linear-gradient(top, #a3a3a3, #000);
+    background: -moz-linear-gradient(top, #a3a3a3, #000);
+    background: linear-gradient(top, #a3a3a3, #000);
+
+    -webkit-box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+button:hover {
+    background: -webkit-linear-gradient(top, #acc7a3, #506651);
+    background: -moz-linear-gradient(top, #acc7a3, #506651);
+    background: linear-gradient(top, #acc7a3, #506651);
+}
+
+button:active {
+    background: -webkit-linear-gradient(top, #858565, #c5c9a9);
+    background: -moz-linear-gradient(top, #858565, #c5c9a9);
+    background: linear-gradient(top, #858565, #c5c9a9);
+}
+
+#stage {
+    width: 300px;
+    height: 33px;
+    position: relative;
+}
+
+#scale {
+    width: 300px;
+    height: 33px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(/workspace/my-second-milestone-project/asset/images/scale.png);
+}
+
+#arrow {
+    width: 17px;
+    height: 22px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(/workspace/my-second-milestone-project/asset/images/arrow.png);
+
+     /* Transition */
+    -webkit-transition: left 0.5s ease-out 0s;
+    -moz-transition: left 0.5s ease-out 0s;
+    transition: left 0.5s ease-out 0s; 
+}
